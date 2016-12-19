@@ -62,9 +62,18 @@ flex-direction: column;
   padding: 4px 0px;
 }
 
+.loader {
+  font-size: 15px !important;
+}
+
 .custom_dimmer {
   z-index: 1500 !important;
 }
+
+/*#modalAddTag {
+  position: static!important;
+  margin: 3.5rem auto!important;
+}*/
 
 .lableClass {
     /*background: red;*/
@@ -149,10 +158,16 @@ flex-direction: column;
   font-size: 17px;
 }
 
+.dimmer {
+  overflow: auto;
+    -webkit-overflow-scrolling: touch;
+}
+
 @media only screen and (max-width: 991px) and (min-width: 768px) {
   .right > .item {
         width: 177px !important;
   }
+
 
   .ui.menu .item {
     padding: .92857143em .9em !important;
@@ -187,23 +202,23 @@ flex-direction: column;
   margin-top: 14px !important;
 }
 
-body::-webkit-scrollbar {
+*::-webkit-scrollbar {
   width: 6px;
   height: 6px;
 }
-body::-webkit-scrollbar-track {
+*::-webkit-scrollbar-track {
   border-radius: 10px;
   background: rgba(0,0,0,0.1);
 }
-body::-webkit-scrollbar-thumb{
+*::-webkit-scrollbar-thumb{
   border-radius: 10px;
-  background: rgba(0,0,0,0.2);
+  background: rgba(255,255,255,0.8);
 }
-body::-webkit-scrollbar-thumb:hover{
-	background: rgba(0,0,0,0.4);
+*::-webkit-scrollbar-thumb:hover{
+	background: rgba(255,255,255,0.9);
 }
-body::-webkit-scrollbar-thumb:active{
-	background: #333;
+*::-webkit-scrollbar-thumb:active{
+	background: rgba(255,255,255,0.4);
 }
 
 .custom_sidebar-icon {
@@ -220,6 +235,11 @@ body::-webkit-scrollbar-thumb:active{
   #menu {
     display: none;
   }
+
+  /*#modalAddTag {
+    -webkit-transform: none;
+    transform: none;
+  }*/
 
   .custom_content {
     padding-left: 0px !important;
